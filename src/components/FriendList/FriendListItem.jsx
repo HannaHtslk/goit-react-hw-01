@@ -9,9 +9,10 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
       <p
         className={clsx({
           [s.isOnline]: isOnline,
+          [s.isOffline]: !isOnline,
         })}
       >
-        {isOnline} Status
+        {isOnline ? 'Online' : 'Offline'}
       </p>
     </div>
   );
