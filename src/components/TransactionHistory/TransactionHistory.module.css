@@ -1,0 +1,42 @@
+.table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 50px auto;
+}
+
+.thead {
+  border: 2px solid black;
+  padding: 8px;
+
+  background-color: black;
+  color: white;
+}
+.title {
+  width: 100px;
+  color: #fafafa;
+}
+.tbody {
+  border: 2px solid black;
+}
+.type {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  max-width: 100px;
+  border: 2px solid black;
+}
+
+.amount {
+  composes: type;
+  text-align: center;
+}
+tr {
+  border: 2px solid black;
+}
+td:first-child {
+  padding-left: 30px;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
